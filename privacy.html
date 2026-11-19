@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سياسة الخصوصية — تواصل | Privacy Policy — Tawasol</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="lang"><a href="#ar">العربية</a><a href="#en">English</a></div>
+
+<section id="ar" dir="rtl">
+<h1>سياسة الخصوصية — تطبيق تواصل</h1>
+<p class="muted">آخر تحديث: 2026-11-19</p>
+
+<h2>١. البيانات التي نجمعها</h2>
+<ul>
+<li><b>بيانات الحساب:</b> البريد الإلكتروني وكلمة المرور (تُدار عبر Firebase Authentication ولا نطّلع على كلمة المرور)، الاسم، اسم المستخدم، النبذة، صورة الملف الشخصي.</li>
+<li><b>رقم الهاتف (اختياري):</b> إن أضفته، يُستخدم ليجدك من يملك رقمك في جهات اتصاله.</li>
+<li><b>جهات الاتصال (اختياري، أندرويد):</b> عند تفعيل المزامنة تُقرأ الأرقام على جهازك ويُسأل الخادم عن كل رقم لمعرفة إن كان مسجلاً. لا نخزّن دفتر عناوينك على خوادمنا؛ نحفظ فقط من وُجد منهم في قائمة جهات اتصالك داخل التطبيق.</li>
+<li><b>الرسائل والوسائط:</b> النصوص والصور والرسائل الصوتية تُخزَّن في Cloud Firestore لتصل إلى المستلم.</li>
+<li><b>بيانات تقنية:</b> رمز الإشعارات (FCM)، حالة الاتصال وآخر ظهور (يمكنك إخفاؤه)، إيصالات القراءة (يمكنك إيقافها)، سجل المكالمات.</li>
+</ul>
+
+<h2>٢. التشفير</h2>
+<p>المحادثات الفردية مشفّرة طرفاً لطرف (X25519 + AES-GCM)؛ لا يستطيع الخادم ولا نحن قراءة محتواها. مفتاحك الخاص محفوظ مشفّراً برمزك السري. <b>رسائل المجموعات غير مشفّرة طرفاً لطرف</b> وتُحمى بقواعد الوصول بحيث لا يقرؤها إلا أعضاء المجموعة.</p>
+
+<h2>٣. المكالمات</h2>
+<p>المكالمات تتم مباشرة بين الأجهزة (WebRTC) ومشفّرة بـ DTLS-SRTP. عند تعذّر الاتصال المباشر تمر عبر خادم ترحيل (TURN) لا يستطيع فك تشفيرها. لا نسجّل المكالمات.</p>
+
+<h2>٤. الجهات الخارجية</h2>
+<ul>
+<li>Google Firebase (المصادقة، قاعدة البيانات، الإشعارات).</li>
+<li>Cloudflare Workers (إرسال الإشعارات).</li>
+<li>Metered.ca (خادم ترحيل المكالمات).</li>
+<li>GitHub (توزيع تحديثات التطبيق واستضافة هذه الصفحة).</li>
+</ul>
+<p>لا نبيع بياناتك ولا نستخدمها للإعلانات.</p>
+
+<h2>٥. البلاغات والإشراف</h2>
+<p>عند الإبلاغ عن رسالة يُرسَل نصها إلى فريق المراجعة بموافقتك كدليل. قد يُوقَف الحساب المخالف لشروط الاستخدام.</p>
+
+<h2 id="delete">٦. حذف الحساب</h2>
+<p>من داخل التطبيق: <b>الإعدادات ← حذف الحساب</b> ثم أدخل كلمة المرور. يُحذف فوراً: اسمك، صورتك، نبذتك، بريدك، رقمك، اسم المستخدم، جهات اتصالك، مفاتيح التشفير، وحساب الدخول، وتخرج من كل المجموعات. الرسائل التي أرسلتها تبقى لدى مستلميها باسم «حساب محذوف». إن لم تستطع الدخول، راسلنا من بريد حسابك على العنوان أدناه وسنحذفه خلال ٣٠ يوماً.</p>
+
+<h2>٧. الأطفال</h2>
+<p>التطبيق غير موجّه لمن هم دون ١٣ عاماً.</p>
+
+<h2>٨. التواصل</h2>
+<p>شمهقشثي1188@لةشهمزؤخة</p>
+</section>
+
+<section id="en" dir="ltr">
+<h1>Privacy Policy — Tawasol</h1>
+<p class="muted">Last updated: 2026-11-19</p>
+
+<h2>1. Data we collect</h2>
+<ul>
+<li><b>Account data:</b> email and password (handled by Firebase Authentication; we never see your password), display name, username, bio, profile photo.</li>
+<li><b>Phone number (optional):</b> if you add it, people who have your number can find you.</li>
+<li><b>Contacts (optional, Android):</b> when you enable sync, numbers on your device are checked one by one to see whether they are registered. We do not store your address book on our servers; only matched users are saved to your in-app contact list.</li>
+<li><b>Messages and media:</b> text, images and voice messages are stored in Cloud Firestore so they can be delivered.</li>
+<li><b>Technical data:</b> push token (FCM), online status and last seen (can be hidden), read receipts (can be turned off), call history.</li>
+</ul>
+
+<h2>2. Encryption</h2>
+<p>One-to-one chats are end-to-end encrypted (X25519 + AES-GCM); neither the server nor we can read them. Your private key is stored encrypted with your PIN. <b>Group messages are not end-to-end encrypted</b>; access rules restrict them to group members.</p>
+
+<h2>3. Calls</h2>
+<p>Calls are peer-to-peer (WebRTC) and encrypted with DTLS-SRTP. When a direct connection is not possible they are relayed through a TURN server that cannot decrypt them. Calls are never recorded.</p>
+
+<h2>4. Third parties</h2>
+<ul>
+<li>Google Firebase (authentication, database, notifications).</li>
+<li>Cloudflare Workers (notification delivery).</li>
+<li>Metered.ca (call relay).</li>
+<li>GitHub (app update distribution and hosting this page).</li>
+</ul>
+<p>We do not sell your data or use it for advertising.</p>
+
+<h2>5. Reports and moderation</h2>
+<p>When you report a message, its text is sent to the review team, with your consent, as evidence. Accounts that violate the Terms may be suspended.</p>
+
+<h2 id="delete-en">6. Deleting your account</h2>
+<p>In the app: <b>Settings → Delete account</b>, then enter your password. This immediately deletes your name, photo, bio, email, phone number, username, contacts, encryption keys and login, and removes you from all groups. Messages you already sent remain with their recipients, labelled "Deleted account". If you cannot sign in, email us from your account's address at the address below and we will delete it within 30 days.</p>
+
+<h2>7. Children</h2>
+<p>The app is not intended for children under 13.</p>
+
+<h2>8. Contact</h2>
+<p>شمهقشثي1188@لةشهمزؤخة</p>
+</section>
+</body></html>
